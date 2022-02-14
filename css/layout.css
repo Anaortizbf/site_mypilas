@@ -1,0 +1,54 @@
+.layout-cabecalho{
+	height: 60px;
+	border-bottom:1px solid #ccc;
+	background-color: white;
+}
+
+.layout-cabecalho--home{
+	position: fixed;/*n se mexe por mais que dermos scroll*/
+	top: 0; /*cabeçalho fixo sempre no topo*/
+	right:0;
+	left:0;
+}
+
+.layout-cabecalho img{
+	margin-top:12px;
+}
+
+.menu-navegacao{
+	float: right;
+	font-size: 20px;
+	line-height: 60px; /*tamanho da linha*/
+	
+}
+.menu-navegacao > a {
+	margin-left: 50px;
+}
+
+.layout-planos{
+	margin: 80px 0;
+
+}
+
+#planos::after{
+	content:"";
+	display: block;
+	clear:both;
+}
+
+.layout-chamada{
+	padding: 80px 0;
+	background-color: #7ab55c;
+	}
+
+.layout-depoimento{
+	padding: 80px 0;
+	background-color: #e7e7e7;
+}
+
+.layout-rodape{
+	padding: 40px;
+	background-color: #484848;
+	color: #fff;
+	text-align: center;
+}

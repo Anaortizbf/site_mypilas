@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{
+			font-size: 26px;
+		}
+
+		article{
+			background-color: green;
+		}
+
+		.coluna1, .coluna2{
+			background-color: gray;
+		}
+
+		.coluna1{
+			float:left;
+			width: 48%;
+		}
+
+		.coluna2{
+			float:right;
+			width: 48%;
+		}
+
+		footer{
+			background-color: yellow;
+		}
+
+		.clearfix{
+			clear:both;	
+		}
+/*
+		article::after{
+			clear:both;
+		}
+*/
+		article > p::first-letter{
+			font-size: 60px;
+			color:red;
+		}
+
+		h1::before{
+			content: "Título: ";
+		}
+
+		h1::after{
+			content: " - artigo"
+		}
+
+	</style>
+</head>
+<body>
+
+	<article>
+		<h1>Este é o título do texto</h1>
+
+		<p class="coluna1">Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste.Criando um texto qualquer para fazer um teste.Criando um texto qualquer para fazer um teste.Criando um texto qualquer para fazer um teste.Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste.Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste.</p>
+
+		<p class="coluna2">Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste.Criando um texto qualquer para fazer um teste.Criando um texto qualquer para fazer um teste.Criando um texto qualquer para fazer um teste.Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste.Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste. Criando um texto qualquer para fazer um teste.</p>
+	</article>
+
+	<footer class="clearfix">
+		Todos os direitos reservados
+	</footer>
+
+</body>
+</html>
